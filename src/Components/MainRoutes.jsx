@@ -1,8 +1,8 @@
 import React from "react";
 import {Routes,Route} from "react-router-dom";
-import Homepage from "./Homepage";
-import Loginpage from "./Loginpage";
-import Sellerpage from "./Sellerpage";
+import Homepage from "../Pages/Homepage";
+import Loginpage from "../Pages/Loginpage";
+import Sellerpage from "../Pages/Sellerpage";
 export const MainRoutes=()=>{
     return<>
     <Routes>
