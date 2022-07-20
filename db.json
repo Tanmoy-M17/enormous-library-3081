@@ -1,27 +1,657 @@
 {
-    "Products":[
+    "cars":[
         {
-        "cars":[
-            {
+    "id": 1,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/y17t0ga5v3jd2-IN/image;s=300x600;q=60"
+    ],
+    "price": "3,80,000",
+    "year": "2018",
+    "distance": "57,000",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "29 May",
+    "totalOwners": 2,
+    "isFeatured": "true",
+    "sellerName": "ZoomWheels",
+    "memeberSince": "Sep 2005",
+    "phone": "9876543210",
+    "state": "Assam",
+    "category": "cars",
+    "brand": "Maruti Suzuki",
+    "model": "Swift Dzire",
+    "transmission": "Manual",
+    "product_desc": "Chevrolet Cruze 2011"
+  },
+  {
+    "id": 2,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/9g814e1dezx7-IN/image;s=300x600;q=60"
+    ],
+    "price": "5,67,000",
+    "year": "2017",
+    "distance": "37,928",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "23 May",
+    "totalOwners": 1,
+    "isFeatured": "true",
+    "sellerName": "ZoomWheels",
+    "memeberSince": "Jan 2017",
+    "phone": "9876543210",
+    "state": "Assam",
+    "category": "cars",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 3,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/cnazxhzzscz71-IN/image;s=300x600;q=60"
+    ],
+    "price": "7,75,000",
+    "year": "2016",
+    "distance": "19,101",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "1 June",
+    "totalOwners": 2,
+    "isFeatured": "true",
+    "sellerName": "ZoomWheels",
+    "memeberSince": "Sep 2005",
+    "phone": "9876543210",
+    "state": "Assam",
+    "category": "cars",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 4,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/i7q5dwaz6ntd-IN/image;s=300x600;q=60"
+    ],
+    "price": "6,72,000",
+    "year": "2018",
+    "distance": "38,282",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "21 May",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "ZoomWheels",
+    "memeberSince": "Feb 2019",
+    "phone": "9876543210",
+    "state": "West Bengal",
+    "category": "cars",
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "transmission": "Automatic",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 5,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/9g814e1dezx7-IN/image;s=300x600;q=60"
+    ],
+    "price": "6,25,000",
+    "year": "2013",
+    "distance": "28,282",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "2 April",
+    "totalOwners": 2,
+    "isFeatured": "true",
+    "sellerName": "Pant Motors",
+    "memeberSince": "Aug 2017",
+    "phone": "9876543210",
+    "state": "West Bengal",
+    "category": "cars",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 6,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/g8pw4y64t5v33-IN/image;s=300x600;q=60"
+    ],
+    "price": "4,75,000",
+    "year": "2014",
+    "distance": "37,282",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "6 June",
+    "totalOwners": 3,
+    "isFeatured": "false",
+    "sellerName": "Sahu Motors",
+    "memeberSince": "Sep 2015",
+    "phone": "9876543210",
+    "state": "West Bengal",
+    "category": "cars",
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 7,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/sgik65cx5bti1-IN/image;s=300x600;q=60"
+    ],
+    "price": "3,75,000",
+    "year": "2017",
+    "distance": "35,171",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "3 June",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Ghosh Motors",
+    "memeberSince": "Aug 2018",
+    "phone": "9876543210",
+    "state": "Goa",
+    "category": "cars",
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 8,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/1nlkmrvseop41-IN/image;s=300x600;q=60"
+    ],
+    "price": "3,45,000",
+    "year": "2010",
+    "distance": "38,383",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "5 June",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "ZoomWheels",
+    "memeberSince": "Jul 2019",
+    "phone": "9876543210",
+    "state": "Goa",
+    "category": "cars",
+    "brand": "Jaguar",
+    "model": "XJ",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 9,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/sgik65cx5bti1-IN/image;s=300x600;q=60"
+    ],
+    "price": "3,75,000",
+    "year": "2010",
+    "distance": "37,172",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "yesterday",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Verma Wheels",
+    "memeberSince": "Jan 2017",
+    "phone": "9876543210",
+    "state": "Uttar Pradesh",
+    "category": "cars",
+    "brand": "Mercedes-Benz",
+    "model": "CLA",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 10,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/1nlkmrvseop41-IN/image;s=300x600;q=60"
+    ],
+    "price": "6,75,000",
+    "year": "2017",
+    "distance": "28,928",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "2 May",
+    "totalOwners": 2,
+    "isFeatured": "false",
+    "sellerName": "Rajesh Motors",
+    "memeberSince": "Jan 2016",
+    "phone": "9876543210",
+    "state": "Uttar Pradesh",
+    "category": "cars",
+    "brand": "Land Rover",
+    "model": "Discovery",
+    "transmission": "ManualAutomatic",
+    "product_desc": "Land Rover Discovery HSE Sportz 2.0 (7 seater) model 2018 in grey colour,very well maintained car from the authorized service centre, Leather seats with electronic adjustable, push pull and Adjustable multifunctional steering wheel , front and rear airbags ,climate control dual A/C, push button start, touch screen stereo, parking sensor and camera also fitted, car is in excellent condition."
+  },
+  {
+    "id": 11,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/sgik65cx5bti1-IN/image;s=300x600;q=60"
+    ],
+    "price": "5,75,000",
+    "year": "2010",
+    "distance": "38,922",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "26 April",
+    "totalOwners": 2,
+    "isFeatured": "false",
+    "sellerName": "Rajat Sahu",
+    "memeberSince": "Sep 2012",
+    "phone": "9876543210",
+    "state": "Madhya Pradesh",
+    "category": "cars",
+    "brand": "Jaguar",
+    "model": "XJ",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 12,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/eeabo4a0zjqw1-IN/image;s=300x600;q=60"
+    ],
+    "price": "3,75,000",
+    "year": "2016",
+    "distance": "93,928",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "20 May",
+    "totalOwners": 3,
+    "isFeatured": "false",
+    "sellerName": "Sharma Motors",
+    "memeberSince": "Feb 2015",
+    "phone": "9876543210",
+    "state": "Madhya Pradesh",
+    "category": "cars",
+    "brand": "Land Rover",
+    "model": "Discovery",
+    "transmission": "ManualAutomatic",
+    "product_desc": "Land Rover Discovery HSE Sportz 2.0 (7 seater) model 2018 in grey colour,very well maintained car from the authorized service centre, Leather seats with electronic adjustable, push pull and Adjustable multifunctional steering wheel , front and rear airbags ,climate control dual A/C, push button start, touch screen stereo, parking sensor and camera also fitted, car is in excellent condition."
+  },
+  {
+    "id": 13,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/eeabo4a0zjqw1-IN/image;s=300x600;q=60"
+    ],
+    "price": "5,75,000",
+    "year": "2016",
+    "distance": "37,292",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "2 May",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Ghai Motors",
+    "memeberSince": "Oct 2012",
+    "phone": "9876543210",
+    "state": "Madhya Pradesh",
+    "category": "cars",
+    "brand": "Land Rover",
+    "model": "Discovery",
+    "transmission": "ManualAutomatic",
+    "product_desc": "Land Rover Discovery HSE Sportz 2.0 (7 seater) model 2018 in grey colour,very well maintained car from the authorized service centre, Leather seats with electronic adjustable, push pull and Adjustable multifunctional steering wheel , front and rear airbags ,climate control dual A/C, push button start, touch screen stereo, parking sensor and camera also fitted, car is in excellent condition."
+  },
+  {
+    "id": 14,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/sgik65cx5bti1-IN/image;s=300x600;q=60"
+    ],
+    "price": "7,75,000",
+    "year": "2015",
+    "distance": "20,926",
+    "fuel": "Diesel",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "yesterday",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Kapil Pant",
+    "memeberSince": "Sep 2014",
+    "phone": "9876543210",
+    "state": "Madhya Pradesh",
+    "category": "cars",
+    "brand": "Jaguar",
+    "model": "XJ",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 15,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/1nlkmrvseop41-IN/image;s=300x600;q=60"
+    ],
+    "price": "4,75,000",
+    "year": "2013",
+    "distance": "65,222",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "2 April",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Kiran",
+    "memeberSince": "Sep 2015",
+    "phone": "9876543210",
+    "state": "Madhya Pradesh",
+    "category": "cars",
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "transmission": "Manual",
+    "product_desc": "mint condition 7 seater car non accidental finance available serious buyers only call Aas Motors"
+  },
+  {
+    "id": 16,
+    "img": [
+      "https://apollo-singapore.akamaized.net/v1/files/1nlkmrvseop41-IN/image;s=300x600;q=60"
+    ],
+    "price": "4,75,000",
+    "year": "2017",
+    "distance": "38,926",
+    "fuel": "Petrol",
+    "address": "Pitampura, Delhi, Delhi",
+    "postDate": "2 May",
+    "totalOwners": 1,
+    "isFeatured": "false",
+    "sellerName": "Ghai Motors",
+    "memeberSince": "Sep 2016",
+    "phone": "9876543210",
+    "state": "Maharashtra",
+    "category": "cars",
+    "brand": "Land Rover",
+    "model": "Discovery",
+    "transmission": "ManualAutomatic",
+    "product_desc": "Land Rover Discovery HSE Sportz 2.0 (7 seater) model 2018 in grey colour,very well maintained car from the authorized service centre, Leather seats with electronic adjustable, push pull and Adjustable multifunctional steering wheel , front and rear airbags ,climate control dual A/C, push button start, touch screen stereo, parking sensor and camera also fitted, car is in excellent condition."
+  }
+],
 
-            }
-            ],
-        "Furniture":[
-            {
-                
-            }
-            ],
-        "Mobiles":[
-            {
-                
-            }
-            ],
-        "Groccery":[
-            {
-                
-            }
-            ]
-        }
-
-    ]
+"all":[
+        {
+          "id": 1,
+          "img": [
+            "https://apollo-singapore.akamaized.net/v1/files/n3lknl74twfj-IN/image;s=300x600;q=60"
+          ],
+          "price": "38,000",
+          "year": "2018",
+          "distance": "57,000",
+          "fuel": "Petrol",
+          "address": "Pitampura, Delhi, Delhi",
+          "postDate": "29 May",
+          "totalOwners": 2,
+          "isFeatured": "true",
+          "sellerName": "ZoomWheels",
+          "memeberSince": "Sep 2005",
+          "phone": "9876543210",
+          "state": "Kerala",
+          "category": "motorcycles",
+          "brand": "Honda",
+          "model": "CB",
+          "transmission": "Manual",
+          "product_desc": "Fix price no bargaining, Fix price no bargaining"
+        },
+        {
+          "id": 2,
+          "img": [
+            "https://apollo-singapore.akamaized.net/v1/files/0bg2cqqvmfbq3-IN/image;s=300x600;q=60"
+          ],
+          "price": "57,000",
+          "year": "2017",
+          "distance": "37,928",
+          "fuel": "Petrol",
+          "address": "Pitampura, Delhi, Delhi",
+          "postDate": "23 May",
+          "totalOwners": 1,
+          "isFeatured": "true",
+          "sellerName": "ZoomWheels",
+          "memeberSince": "Jan 2017",
+          "phone": "9876543210",
+          "state": "Kerala",
+          "category": "motorcycles",
+          "brand": "Bajaj",
+          "model": "Pulsar",
+          "transmission": "Manual",
+          "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+        },
+        {
+          "id": 3,
+          "img": [
+            "https://apollo-singapore.akamaized.net/v1/files/f2cq5n8431ta1-IN/image;s=300x600;q=60"
+          ],
+          "price": "75,000",
+          "year": "2016",
+          "distance": "19,101",
+          "fuel": "Petrol",
+          "address": "Pitampura, Delhi, Delhi",
+          "postDate": "1 June",
+          "totalOwners": 2,
+          "isFeatured": "true",
+          "sellerName": "ZoomWheels",
+          "memeberSince": "Sep 2005",
+          "phone": "9876543210",
+          "state": "Kerala",
+          "category": "motorcycles",
+          "brand": "Bajaj",
+          "model": "Pulsar",
+          "transmission": "Manual",
+          "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+        },
+        {
+          "id": 4,
+          "img": "https://apollo-singapore.akamaized.net/v1/files/huhly9gz62651-IN/image;s=300x600;q=60",
+          "price": "62,000",
+          "year": "2018",
+          "distance": "38,282",
+          "fuel": "Petrol",
+          "address": "Pitampura, Delhi, Delhi",
+          "postDate": "21 May",
+          "totalOwners": 1,
+          "isFeatured": "false",
+          "sellerName": "ZoomWheels",
+          "memeberSince": "Feb 2019",
+          "phone": "9876543210",
+          "state": "Madhya Pradesh",
+          "category": "motorcycles",
+          "brand": "Hero Honda",
+          "model": "Splendor",
+          "transmission": "Automatic",
+          "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+        },
+        {
+        "id": 5,
+        "img": "https://apollo-singapore.akamaized.net/v1/files/cco69t3dt9yt3-IN/image;s=300x600;q=60",
+        "price": "38,000",
+        "year": "2018",
+        "distance": "57,000",
+        "fuel": "Petrol",
+        "address": "Pitampura, Delhi, Delhi",
+        "postDate": "29 May",
+        "totalOwners": 2,
+        "isFeatured": "true",
+        "sellerName": "ZoomWheels",
+        "memeberSince": "Sep 2005",
+        "phone": "9876543210",
+        "state": "Himachal Pradesh",
+        "category": "scooters",
+        "brand": "Honda",
+        "model": "CB",
+        "transmission": "Manual",
+        "product_desc": "Fix price no bargaining, Fix price no bargaining"
+      },
+      {
+        "id": 6,
+        "img":"https://apollo-singapore.akamaized.net/v1/files/r9ocm2xngwv72-IN/image;s=300x600;q=60", 
+        "price": "57,000",
+        "year": "2017",
+        "distance": "37,928",
+        "fuel": "Petrol",
+        "address": "Pitampura, Delhi, Delhi",
+        "postDate": "23 May",
+        "totalOwners": 1,
+        "isFeatured": "true",
+        "sellerName": "ZoomWheels",
+        "memeberSince": "Jan 2017",
+        "phone": "9876543210",
+        "state": "Himachal Pradesh",
+        "category": "scooters",
+        "brand": "Bajaj",
+        "model": "Pulsar",
+        "transmission": "Manual",
+        "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+      },
+      {
+        "id": 7,
+        "img": "https://apollo-singapore.akamaized.net/v1/files/r9ocm2xngwv72-IN/image;s=300x600;q=60", 
+        "price": "75,000",
+        "year": "2016",
+        "distance": "19,101",
+        "fuel": "Petrol",
+        "address": "Pitampura, Delhi, Delhi",
+        "postDate": "1 June",
+        "totalOwners": 2,
+        "isFeatured": "true",
+        "sellerName": "ZoomWheels",
+        "memeberSince": "Sep 2005",
+        "phone": "9876543210",
+        "state": "Himachal Pradesh",
+        "category": "scooters",
+        "brand": "Bajaj",
+        "model": "Pulsar",
+        "transmission": "Manual",
+        "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+      },
+      {
+        "id": 8,
+        "img":"https://apollo-singapore.akamaized.net/v1/files/cco69t3dt9yt3-IN/image;s=300x600;q=60",
+        "price": "62,000",
+        "year": "2018",
+        "distance": "38,282",
+        "fuel": "Petrol",
+        "address": "Pitampura, Delhi, Delhi",
+        "postDate": "21 May",
+        "totalOwners": 1,
+        "isFeatured": "false",
+        "sellerName": "ZoomWheels",
+        "memeberSince": "Feb 2019",
+        "phone": "9876543210",
+        "state": "Himachal Pradesh",
+        "category": "scooters",
+        "brand": "Hero Honda",
+        "model": "Splendor",
+        "transmission": "Automatic",
+        "product_desc": "Bajaj Pulsar NS 160 ABS Aug'2019 model, Bike is in excellent condition, only 24100 km driven, insurance valid till 2024, price is fix please don't bargain."
+      },
+    {
+        "id": 9,
+        "product_name": "T-shirt",
+        "img": "https://www.apetogentleman.com/wp-content/uploads/2019/06/best-mens-tshirts.jpg",
+        "product_desc": "Quia et suscipit ostrum Quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae u  autem sunt rem eveniet architecto",
+        "price": "500",
+        "rating": 4.3,
+        "category": "mens"
+      },
+      {
+        "id": 10,
+        "product_name": "Jeans",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gh-jeans-index-1552316663.png?crop=0.941xw:0.936xh;0.0304xw,0.0639xh&resize=1200:*",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "300",
+        "rating": 4.3,
+        "category": "mens"
+      },
+      {
+        "id": 11,
+        "product_name": "Cargo",
+        "img": "https://5.imimg.com/data5/GP/MD/MY-49357258/mens-cargo-pant-500x500.jpg",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "400",
+        "rating": 4.3,
+        "category": "mens"
+      },
+      {
+        "id": 12,
+        "product_name": "Shirts",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkD86VMIvuOUAne-qdiwi1m0dbk-f6Ou-3-Q&usqp=CAU",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "505",
+        "rating": 4.3,
+        "category": "unisex"
+      },
+    {
+        "id": 13,
+        "product_name": "HP Laptop",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51y8P2rYc5L._AC_SX425_.jpg",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "35,000",
+        "rating": 4.3,
+        "category": "laptops"
+      },
+      {
+        "id": 14,
+        "product_name": "RedMI",
+        "img": "https://i01.appmifile.com/webfile/globalimg/in/cms/AB364A54-1B83-9A20-B4F3-05BCE9135921.jpg",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "10,000",
+        "rating": 4.3,
+        "category": "mobiles"
+      },
+      {
+        "id": 15,
+        "product_name": "Boats Headphones",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/61US9yCTRJL._SL1500_.jpg",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "1,599",
+        "rating": 4.3,
+        "category": "headphones"
+      },
+      {
+        "id": 16,
+        "product_name": "Samsung Headphones",
+        "img": "https://images.samsung.com/is/image/samsung/ie-wireless-akg-headphones-y600nc-gp-y600hahcaaa-dynamicblack-thumb-266944681?$LazyLoad_Home_IMG$",
+        "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+        "price": "2,999",
+        "rating": 4.3,
+        "category": "headphones"
+      },
+  {
+    "id": 17,
+    "product_name": "Samsung Microwave",
+    "img": "https://images.samsung.com/is/image/samsung/in-21-litre-convection-microwave-oven-ce73jd-b-ce73jd-b-xtl-Black-121357600?$720_576_PNG$",
+    "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+    "price": "500",
+    "rating": 4.3,
+    "category": "microwave"
+  },
+  {
+    "id": 18,
+    "product_name": "MI LED TV",
+    "img": "https://global.appmifile.com/webfile/globalimg/in/cms/A7442D32-F379-BD0A-4B22-A262258E2756.jpg",
+    "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+    "price": "300",
+    "rating": 4.3,
+    "category": "television"
+  },
+  {
+    "id": 19,
+    "product_name": "Koryo Microwave",
+    "img": "https://www.hometown.in/media/product/19/0163/58389/1.jpg",
+    "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+    "price": "400",
+    "rating": 4.3,
+    "category": "microwave"
+  },
+  {
+    "id": 20,
+    "product_name": "Samsung Refrigerator",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71O31clz6mL._SL1500_.jpg",
+    "product_desc": "Quia et suscipit strum rerum est autem sunt rem eveniet architecto Quia et suscipit\nsuscipit recusandae consequuntur autem sunt rem eveniet architecto",
+    "price": "505",
+    "rating": 4.3,
+    "category": "refrigerator"
+  }
+]
 }

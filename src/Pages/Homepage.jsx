@@ -6,12 +6,17 @@ const Homepage = () => {
   return (
     <div>
       <div className='head'> 
-      <Button className='bt'>Sell Car</Button>
+        <Button className='bt'>Sell Car</Button>
       </div>
-      <Productlist/>
+      <div className='listview'>
+      Fresh recommendations
+        <Productlist/>
+      </div>
+      
     </div>
   )
 }
 
 export default Homepage
+
 

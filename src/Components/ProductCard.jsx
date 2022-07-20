@@ -1,13 +1,14 @@
 import React from 'react'
-import { Box,Image,Stack } from '@chakra-ui/react'
+import "./Productcard.css"
 const ProductCard = ({data}) => {
   return (
-    <Box>
-        <Stack>
-        <Image src={data.image}/>
-  
-        </Stack>
-    </Box>
+    <div className='acard'>
+      <img className='img' src={data.img} alt="" />
+       <h2>₹ {data.price}</h2>
+       <p className='p'>{data.product_desc}</p>
+    </div>
+
+    
   )
 }
 
