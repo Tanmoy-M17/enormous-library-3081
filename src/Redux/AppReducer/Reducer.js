@@ -17,7 +17,7 @@ export const reducer=(state=intialState,{type,payload})=>{
         case GET_PRODUCTS_SUCCESS:{
             return {
                 ...state,
-                Books:payload,
+                Products:payload,
                 isLoading:false,
                 isError:false
             }
