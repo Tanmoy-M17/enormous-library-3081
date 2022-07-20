@@ -6,6 +6,7 @@ import search2 from "../NavLogos/download.png";
 import msg from "../NavLogos/msg.png";
 import bell from "../NavLogos/bell.png";
 import sell from "../NavLogos/sell.png";
+import {Link} from "react-router-dom"
 const Navbar = () => {
   return (
     <div className={Styles.navbar}>
@@ -38,9 +39,23 @@ const Navbar = () => {
             <div className={Styles.e}><img src={sell} width='90px' height='70px'/></div>
             </div>
         </div>
-        <div className={Styles.nav2}>
+            <div className={Styles.nav2}>
+            <div className={Styles.nav2a}>
+            <div className={Styles.nav2a1}><h6>ALL CATEGORIES</h6></div>
+            <div className={Styles.a}><img width='40px' height='30px' src={arrow} /></div>
+              </div>
+              <div className={Styles.nav2b}>
+         <Link to ="/cars">Cars</Link>
+         <Link to ="/motarcycles">Motarcycles</Link>
+         <Link to ="/mobiles">Mobile Phones</Link>
+         <Link to ="/forsale">For Sale: Houses & Apartments</Link>
+         <Link to ="/scooters">Scooters</Link>
+         <Link to ="/commercial">Commercial & Others Vehicles</Link>       
+         <Link to ="/forrent">For Rent: Houses & Apartments</Link>
 
-        </div>
+
+              </div>
+            </div>
     </div>
   )
 }

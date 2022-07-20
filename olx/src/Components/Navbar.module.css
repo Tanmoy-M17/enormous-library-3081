@@ -1,12 +1,21 @@
+
+.navbar{
+    border:1px solid green;
+    width:100%;
+    height:200px;
+}
+
+
+
 .nav1{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     width:100%;
     height:90px;
     display:flex;
     align-items: center;
-    margin-top:-20px;
-    position:fixed;
-
+    /* margin-top:-20px; */
+    /* position:fixed; */
+    border:1px solid brown;
 }
 .inp1{
     border:2px solid black;
@@ -53,4 +62,41 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 15px;
+}
+.nav2{
+    border:1px solid red;
+    width:100%;
+    height:60px;
+    display:flex;
+
+}
+.nav2a{
+    display:flex;
+    width:200px;
+    border:1px solid yellowgreen;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.nav2a{
+    font-size:22px;
+}
+.nav2b{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    width:80%;
+    border:1px solid blue;
+
+
+}
+*:focus {
+    outline: none;
+  }
+  div>a{
+    color: grey;
+    text-decoration: none;
 }

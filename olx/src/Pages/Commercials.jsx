@@ -2,7 +2,7 @@ import React from 'react'
 
 const Commercials = () => {
   return (
-    <div>Commercials</div>
+    <div>Commercials & Other Vehicles</div>
   )
 }
 
