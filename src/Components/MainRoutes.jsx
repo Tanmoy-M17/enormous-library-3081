@@ -10,9 +10,11 @@ export const MainRoutes=()=>{
         <Route path='/' element={<Homepage/>}/>
         <Route path="/login" element={<Loginpage/>}/>
         <Route path='/sell' element={
-            <RequireAuth>
+        <RequireAuth>
         <Sellerpage/>
-        </RequireAuth>}/>
+        </RequireAuth>
+    }/>
+        
     </Routes>
     </>
 }

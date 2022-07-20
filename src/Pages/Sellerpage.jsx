@@ -18,84 +18,84 @@ const Sellerpage = () => {
     let bookbox=document.getElementById("book");
     let petbox=document.getElementById("pet");
     let sbox=document.getElementById("service");
-    if(menu=="auto"){
+    if(menu==="auto"){
     
       carbox.style.display="block";
     }
     else{
       carbox.style.display="none";
     }
-    if(menu=="property"){
+    if(menu==="property"){
       
         propertybox.style.display="block";
       }
       else{
         propertybox.style.display="none";
       }
-    if(menu=="mobile"){
+    if(menu==="mobile"){
         
           mobilebox.style.display="block";
         }
         else{
           mobilebox.style.display="none";
         }
-      if(menu=="job"){
+      if(menu==="job"){
           
             jobbox.style.display="block";
           }
           else{
             jobbox.style.display="none";
           }
-      if(menu=="bike"){
+      if(menu==="bike"){
            
               bikebox.style.display="block";
             }
             else{
               bikebox.style.display="none";
             }
-      if(menu=="appliance"){
+      if(menu==="appliance"){
              
                 abox.style.display="block";
               }
               else{
                 abox.style.display="none";
               }
-      if(menu=="spare"){
+      if(menu==="spare"){
                
                   sparebox.style.display="block";
                 }
                 else{
                   sparebox.style.display="none";
                 }
-      if(menu=="furniture"){
+      if(menu==="furniture"){
                  
                     fbox.style.display="block";
                   }
                   else{
                     fbox.style.display="none";
                   }
-      if(menu=="fashion"){
+      if(menu==="fashion"){
                     
                       fashionbox.style.display="block";
                     }
                     else{
                       fashionbox.style.display="none";
                     }
-      if(menu=="book"){
+      if(menu==="book"){
                      
                         bookbox.style.display="block";
                       }
                       else{
                         bookbox.style.display="none";
                       }
-      if(menu=="pet"){
+      if(menu==="pet"){
                       
                           petbox.style.display="block";
                         }
                         else{
                           petbox.style.display="none";
                         }
-      if(menu=="service"){
+      if(menu==="service"){
                          
                             sbox.style.display="block";
                           }
