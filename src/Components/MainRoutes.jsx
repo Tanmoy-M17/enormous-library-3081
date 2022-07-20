@@ -1,5 +1,6 @@
 import React from "react";
 import {Routes,Route} from "react-router-dom";
+import RequireAuth from "../Hoc/RequireAuth";
 import Homepage from "../Pages/Homepage";
 import Loginpage from "../Pages/Loginpage";
 import Sellerpage from "../Pages/Sellerpage";
@@ -8,7 +9,10 @@ export const MainRoutes=()=>{
     <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path="/login" element={<Loginpage/>}/>
-        <Route path='/sell' element={<Sellerpage/>}/>
+        <Route path='/sell' element={
+            <RequireAuth>
+        <Sellerpage/>
+        </RequireAuth>}/>
     </Routes>
     </>
 }
