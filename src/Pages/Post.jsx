@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Heading, Alert,AlertDescription,AlertTitle,AlertIcon,AlertDialog,AlertDialogCloseButton,AlertDialogHeader,AlertDialogContent,AlertDialogOverlay,AlertDialogBody} from "@chakra-ui/react";
+import {Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Heading} from "@chakra-ui/react";
 import {Link, useNavigate} from "react-router-dom";
 import styles from "./Post.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,7 +46,6 @@ function reducer(state,{type,payload}){
     }
     }
 export const Post=()=>{
-
     const [image, setImage] = useState({ preview: "", raw: "" });
     const [state,setter]=useReducer(reducer,initialState);
     const navigate=useNavigate();
