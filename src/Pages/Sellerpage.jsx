@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Sell.module.css";
 import {Box, Flex, Heading} from "@chakra-ui/react";
+import {Link} from "react-router-dom";
 import {ChevronRightIcon} from "@chakra-ui/icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCar,faBuilding, faMobileButton, faBriefcase, faMotorcycle, faDisplay, faTruckPlane, faCouch, faShirt, faGuitar, faShieldDog, faBellConcierge} from "@fortawesome/free-solid-svg-icons";
@@ -220,96 +221,94 @@ const Sellerpage = () => {
     </Box>
 {/* {hidden box} */}
 <Box className={styles.hidden} id="auto">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Cars</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Cars</Box></Link>
   </Box>
   <Box className={styles.hidden} id="property">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>For Sale:Houses {"&"} Apartments</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>For Rent:Houses {"&"} Apartments</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Lands {"&"} Plots</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>For Rent:Shops {"&"} Offices</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>For Sale:Shops {"&"} Offices</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>PG {"&"} Guest Houses</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>For Sale:Houses {"&"} Apartments</Box></Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>For Rent:Houses {"&"} Apartments</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Lands {"&"} Plots</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>For Rent:Shops {"&"} Offices</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>For Sale:Shops {"&"} Offices</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>PG {"&"} Guest Houses</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="mobile">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Mobile Phones</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Accessories</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Tablets</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Mobile Phones</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Accessories</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Tablets</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="job">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Data Entry {"&"} Back Office</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Sales {"&"} Marketing</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>BPO {"&"} Telecaller</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Driver</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Office Assistant</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Delivery {"&"} collection</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Teacher</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Cook</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Receptionist {"&"} Front Office</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Operator {"&"} Technician</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>IT Engineer {"&"} Developer</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Hotel {"&"} Travel Excecutive</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Accountant</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Designer</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Other Jobs</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Data Entry {"&"} Back Office</Box> </Link>
+  <Link to="/post"> <Box paddingTop="0.5rem" className={styles.menuitem}>Sales {"&"} Marketing</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>BPO {"&"} Telecaller</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Driver</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Office Assistant</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Delivery {"&"} collection</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Teacher</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Cook</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Receptionist {"&"} Front Office</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Operator {"&"} Technician</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>IT Engineer {"&"} Developer</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Hotel {"&"} Travel Excecutive</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Accountant</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Designer</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Other Jobs</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="bike">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Motorcycles</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Scooters</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Spare Parts</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Bycycles</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Motorcycles</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Scooters</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Spare Parts</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Bycycles</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="appliance">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>TVs,Video-Audio</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Kitchen {"&"} Other Appliances</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Computers {"&"} Laptops</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Cameras {"&"} Lenses</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Games {"&"} Entertainment</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Fridges</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Computer Accessories</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Hard Disc,Printers {"&"} Monitors</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>ACs</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Washing Machines</Box>
+  <Link to="/post"> <Box paddingTop="0.5rem" className={styles.menuitem}>TVs,Video-Audio</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Kitchen {"&"} Other Appliances</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Computers {"&"} Laptops</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Cameras {"&"} Lenses</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Games {"&"} Entertainment</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Fridges</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Computer Accessories</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Hard Disc,Printers {"&"} Monitors</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>ACs</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Washing Machines</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="spare">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Commercial {"&"} Other Vehicles</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Spare Parts</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Commercial {"&"} Other Vehicles</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Spare Parts</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="furniture">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Sofas Dining</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Beds {"&"} Wardrobes</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Home Decor {"&"} Garden</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Kids Furniture</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Other Household Items</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Sofas Dining</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Beds {"&"} Wardrobes</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Home Decor {"&"} Garden</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Kids Furniture</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Other Household Items</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="fashion">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Men</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Women</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Kids</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Men</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Women</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Kids</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="book">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Books</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Gym {"&"} Fitness</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Musical Instruments</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Sports Equipments</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Other Hobbies</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Books</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Gym {"&"} Fitness</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Musical Instruments</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Sports Equipments</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Other Hobbies</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="pet">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Fishes {"&"} Aquarium</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Pet Food {"&"} Accessories</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Dogs</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Other Pets</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Fishes {"&"} Aquarium</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Pet Food {"&"} Accessories</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Dogs</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Other Pets</Box> </Link>
   </Box>
   <Box className={styles.hidden} id="service">
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Electronics {"&"} Computers</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Education {"&"} Classes</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Drivers {"&"} Taxis</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Health {"&"} Beauty</Box>
-  <Box paddingTop="0.5rem" className={styles.menuitem}>Others</Box>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Electronics {"&"} Computers</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Education {"&"} Classes</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Drivers {"&"} Taxis</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Health {"&"} Beauty</Box> </Link>
+  <Link to="/post"><Box paddingTop="0.5rem" className={styles.menuitem}>Others</Box> </Link>
   </Box>
   </Flex>
-  </Box>
-  
-  
+  </Box> 
   </>)
 }
 

@@ -4,7 +4,7 @@
 }
 .box{
     border-radius:5px;
-    border:1px solid grey;
+    border:1px solid #8ca1a3;
      width:60%;
      margin:auto;
      margin-top: 10px;
@@ -12,7 +12,7 @@
 }
 .menu{
     margin-top:10px;
-    border:1px solid grey;
+    border:1px solid #8ca1a3;
     width:50%;
     border-left: none;
     border-top: none;
@@ -20,7 +20,7 @@
 .menuitem{
     padding:10px;
     cursor:pointer;
-    border-top: 1px solid grey;
+    border-top: 1px solid #8ca1a3;
     font-size: 16px;
     color:#5c7a7d;
     line-height: 32px;
