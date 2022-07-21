@@ -6,14 +6,21 @@ import search2 from "../NavLogos/download.png";
 import msg from "../NavLogos/msg.png";
 import bell from "../NavLogos/bell.png";
 import sell from "../NavLogos/sell.png";
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import Dropdown from './Dropdown';
 const Navbar = () => {
+  const navigate=useNavigate();
+
+  const handlHome=()=>{
+    navigate("/");
+  }
   return (
     <div className={Styles.navbar}>
         <div className={Styles.nav1}>
             <div className={Styles.n1}>
                 <img width='50px' height='35px'
-                src="https://olx-webclone.web.app/static/media/olx%20logo.f23ad0c1.png" alt="" />
+                src="https://olx-webclone.web.app/static/media/olx%20logo.f23ad0c1.png" alt="" 
+                onClick={()=>handlHome()} />
             </div>
               <div className={Styles.inp1}>
                 <div className={Styles.slogo}>
@@ -42,7 +49,12 @@ const Navbar = () => {
             <div className={Styles.nav2}>
             <div className={Styles.nav2a}>
             <div className={Styles.nav2a1}><h6>ALL CATEGORIES</h6></div>
-            <div className={Styles.a}><img width='40px' height='30px' src={arrow} /></div>
+            <div className={Styles.a}>
+            <Link to ="/dropdown"><img width='40px' height='30px' src={arrow } /></Link>
+            <Link to ="/">.</Link>
+
+            
+            </div>
               </div>
               <div className={Styles.nav2b}>
          <Link to ="/cars">Cars</Link>

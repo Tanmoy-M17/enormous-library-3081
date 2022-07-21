@@ -7,11 +7,13 @@ import Mobiles from '../Pages/Mobiles'
 import Motarcycles from '../Pages/Motarcycles'
 import Rent_Houses from '../Pages/Rent_Houses'
 import Scooters from '../Pages/Scooters'
+import Dropdown from './Dropdown'
 
 const AllRoutes = () => {
   return (
     <div>
         <Routes>
+            <Route path={'/dropdown'} element={<Dropdown />}></Route>
         <Route path={'/cars'} element={<Cars/>}></Route>
         <Route path={'/motarcycles'} element={<Motarcycles/>}></Route>
         <Route path={'/mobiles'} element={<Mobiles/>}></Route>
