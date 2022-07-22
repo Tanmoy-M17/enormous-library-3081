@@ -37,11 +37,11 @@ const Navbar = () => {
               </div>
             </div>
             <div className={Styles.last}>
-              <div><h6>ENGLISH</h6></div>
-            <div className={Styles.a}><img width='40px' height='30px' src={arrow} /></div>
-            <div className={Styles.b}><img width='40px' height='30px' src={msg} /></div>
-            <div className={Styles.c}><img width='40px' height='30px' src={bell} /></div>
-            <div className={Styles.d}><h6>LOGIN</h6></div>
+              <div><h5>ENGLISH</h5></div>
+            <div className={Styles.a}><img width='30px' height='30px' src={arrow} /></div>
+            <div className={Styles.b}><img width='30px' height='30px' src={msg} /></div>
+            <div className={Styles.c}><img width='30px' height='30px' src={bell} /></div>
+            <div className={Styles.d}><h5>LOGIN</h5></div>
             <div className={Styles.a}><img width='40px' height='30px' src={arrow} /></div>
             <div className={Styles.e}><img src={sell} width='90px' height='70px'/></div>
             </div>
