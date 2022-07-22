@@ -4,9 +4,6 @@ import {
   GET_CARS_FAILURE,
   GET_CARS_REQUEST,
   GET_CARS_SUCCESS,
-  GET_MOBILE_FAILURE,
-  GET_MOBILE_REQUEST,
-  GET_MOBILE_SUCCESS,
   GET_MOTORCYCLES_FAILURE,
   GET_MOTORCYCLES_REQUEST,
   GET_MOTORCYCLES_SUCCESS,
@@ -92,38 +89,7 @@ export const getMotorcyclesList = (payload) => (dispatch) => {
     });
 };
 
-// Mobiles actions
 
-export const getMobilesRequest = () => {
-  return {
-    type: GET_MOBILE_REQUEST,
-  };
-};
-
-export const getMobilesSuccess = (payload) => {
-  return {
-    type: GET_MOBILE_SUCCESS,
-    payload,
-  };
-};
-
-export const getMobilesFailure = () => {
-  return {
-    type: GET_MOBILE_FAILURE,
-  };
-};
-
-export const getMobilesList = (payload) => (dispatch) => {
-  dispatch(getMobilesRequest());
-  axios
-    .get("https://json-server-olx.herokuapp.com/mobiles")
-    .then((res) => {
-      dispatch(getMobilesSuccess(res.data));
-    })
-    .catch((err) => {
-      dispatch(getMobilesFailure());
-    });
-};
 
 // Sales house action
 

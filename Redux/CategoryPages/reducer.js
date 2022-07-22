@@ -2,9 +2,6 @@ import {
   GET_CARS_FAILURE,
   GET_CARS_REQUEST,
   GET_CARS_SUCCESS,
-  GET_MOBILE_FAILURE,
-  GET_MOBILE_REQUEST,
-  GET_MOBILE_SUCCESS,
   GET_MOTORCYCLES_FAILURE,
   GET_MOTORCYCLES_REQUEST,
   GET_MOTORCYCLES_SUCCESS,
@@ -79,28 +76,7 @@ export const Reducer = (state = initState, { type, payload }) => {
       };
     }
 
-    // MOBILES
-
-    case GET_MOBILE_REQUEST: {
-      return {
-        ...state,
-        isLoading: true,
-      };
-    }
-    case GET_MOBILE_SUCCESS: {
-      return {
-        ...state,
-        isLoading: false,
-        products: payload,
-      };
-    }
-    case GET_MOBILE_FAILURE: {
-      return {
-        ...state,
-        isLoading: false,
-        isError: true,
-      };
-    }
+    
 
     // SALES HOUSE
 
