@@ -18,9 +18,10 @@ const Footer = () => {
             </div>
             <div className={Styles.fm1c}>
                 <h3>GET YOUR APP TODAY</h3>
+                <div className={Styles.fm1c2}>
                 <img src="https://statics.olx.in/external/base/img/appstore_2x.webp" alt="" />
                 <img src="https://statics.olx.in/external/base/img/playstore_2x.webp" alt="" />
-
+                </div>
             </div>
 
         </div>

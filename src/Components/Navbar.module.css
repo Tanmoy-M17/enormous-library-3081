@@ -86,7 +86,10 @@
     margin-left: 40px;
 }
 .nav2a{
-    font-size:22px;
+    font-size:19px;
+}
+.nav2a1{
+    font-size: 20px;
 }
 .nav2b{
     display:flex;

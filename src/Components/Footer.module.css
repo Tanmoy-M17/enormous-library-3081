@@ -45,6 +45,19 @@
  .fm1c{
     text-align: center;
     border-left: 2px solid grey;
+    padding-top: 30px;
+ }
+ .fm1c2{
+   display: flex;
+   gap:25px;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+ }
+ .fimg{
+   display: flex;
+   gap:20px;
+   padding-bottom: 5px;
  }
  .fm2>div{
     width:23%;
@@ -57,6 +70,7 @@
     font-size: 20px;
     margin-bottom: 40px;
     gap:10px;
+    margin-top: 20px;
  }
  .fm2e>div>h4{
 margin-bottom: -20px;
