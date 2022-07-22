@@ -71,6 +71,8 @@ export const Modal = ({ show, handleClose }) => {
   }
   return (
     <>
+    //Main section of login page-page1
+    //----------------------------------------------
       {mainSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -163,6 +165,10 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
+
+
+      //email section of login page-page2
+      //----------------------------------------------------
       {emailSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -240,7 +246,10 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
+      
 
+      //phone section of login page -page2
+      //-------------------------------------------
       {phoneSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -310,6 +319,10 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
+
+
+      //OTP section of login page -page3
+      //---------------------------------------
       {otpSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
