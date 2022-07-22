@@ -12,7 +12,6 @@ export const MainRoutes=()=>{
         <Route path="/login" element={<Loginpage/>}/>
         <Route path='/sell' element={<Sellerpage/>}/>
         <Route path='/post' element={<Post/>}/>
-        
     </Routes>
     </>
 }
