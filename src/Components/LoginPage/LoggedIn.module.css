@@ -1,0 +1,36 @@
+.main_div{
+    border: 1px solid red;
+    width: 25%;
+    margin: auto;
+}
+
+
+.userImage{
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
+}
+.userInfo{
+    display: flex;
+}
+.name{
+    color:#002f34;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: -5px;
+}
+.anchor_tag{
+    color: black;
+    font-size: x-small;
+    margin-left: 5px;
+}
+.icons{
+    width: 15px;
+    height: 20px;
+    color:#002f34;
+}
+.anchor_div{
+    display: flex;
+}
