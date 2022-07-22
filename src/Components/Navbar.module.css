@@ -15,8 +15,8 @@
     height:90px;
     display:flex;
     align-items: center;
-     /* position:fixed; */
-     position: sticky;
+    position:fixed;
+    position: sticky;
     /* border:1px solid brown; */
 }
 .inp1{
