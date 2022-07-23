@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className={Styles.a}><img width='30px' height='30px' src={arrow} /></div>
             <div className={Styles.b}><img width='30px' height='30px' src={msg} /></div>
             <div className={Styles.c}><img width='30px' height='30px' src={bell} /></div>
-            <div className={Styles.d}><h5 onClick={()=>navigate("/login")}>LOGIN</h5></div>
+            <div className={Styles.d}><h5 onClick={()=>navigate("/signin")}>LOGIN</h5></div>
             <div className={Styles.a}><img width='40px' height='30px' src={arrow} /></div>
             <div className={Styles.e}><img src={sell} onClick={()=>navigate("/sell")} width='90px' height='70px'/></div>
             </div>
