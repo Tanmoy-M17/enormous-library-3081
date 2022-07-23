@@ -6,9 +6,7 @@ dispatch({type:USER_LOGIN_REQUEST});
 
 return axios({
     method:"post",
-    // url:"/api/login",
     url:"http://localhost:8080/data",
-    // baseURL:"https://reqres.in",
     data:payload
 }).then((r)=>dispatch({type:USER_LOGIN_SUCCESS,payload:r.data}))
 .catch((err)=>dispatch({type:USER_LOGIN_FAILURE}))
