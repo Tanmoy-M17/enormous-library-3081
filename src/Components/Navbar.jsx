@@ -11,16 +11,16 @@ import Dropdown from './Dropdown';
 const Navbar = () => {
   const navigate=useNavigate();
 
-  const handlHome=()=>{
-    navigate("/");
-  }
+  // const handlHome=()=>{
+  //   navigate("/");
+  // }
   return (
     <div className={Styles.navbar}>
         <div className={Styles.nav1}>
             <div className={Styles.n1}>
                 <img width='50px' height='35px'
                 src="https://olx-webclone.web.app/static/media/olx%20logo.f23ad0c1.png" alt="" 
-                onClick={()=>handlHome()} />
+                onClick={()=>navigate("/")} />
             </div>
               <div className={Styles.inp1}>
                 <div className={Styles.slogo}>
