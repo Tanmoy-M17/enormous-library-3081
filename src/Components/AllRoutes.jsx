@@ -1,12 +1,11 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Cars from '../Pages/Cars'
-import Commercials from '../Pages/Commercials'
-import Houses from '../Pages/Houses'
-import Mobiles from '../Pages/Mobiles'
-import Motarcycles from '../Pages/Motarcycles'
-import Rent_Houses from '../Pages/Rent_Houses'
-import Scooters from '../Pages/Scooters'
+import {CarPage} from '../Pages/CartegoryPages/CarPage'
+import {CommericalVPage} from '../Pages/CartegoryPages/CommericalVPage'
+import {HouseSalePage} from '../Pages/CartegoryPages/HouseSalePage'
+import {ScootersPage} from '../Pages/CartegoryPages/ScootersPage'
+import {MotorcyclePage} from '../Pages/CartegoryPages/MotorcyclePage'
+import {HouseRentPage} from '../Pages/CartegoryPages/HouseRentPage'
 import Dropdown from './Dropdown'
 
 const AllRoutes = () => {
@@ -14,14 +13,14 @@ const AllRoutes = () => {
     <div>
         <Routes>
             <Route path={'/dropdown'} element={<Dropdown />}></Route>
-        <Route path={'/cars'} element={<Cars/>}></Route>
-        <Route path={'/motarcycles'} element={<Motarcycles/>}></Route>
-        <Route path={'/mobiles'} element={<Mobiles/>}></Route>
-        <Route path={'/forsale'} element={<Houses/>}></Route>
-        <Route path={'/scooters'} element={<Scooters/>}></Route>
-        <Route path={'/commercial'} element={<Commercials/>}></Route>
-        <Route path={'/forrent'} element={<Rent_Houses/>}></Route>
-
+        <Route path={'/cars'} element={<CarPage/>}></Route>
+        <Route path={'/motarcycles'} element={<MotorcyclePage/>}></Route>
+        <Route path={'/forsale'} element={<HouseSalePage/>}></Route>
+        <Route path={'/scooters'} element={<ScootersPage/>}></Route>
+        <Route path={'/commercial'} element={<CommericalVPage/>}></Route>
+        <Route path={'/forrent'} element={<HouseRentPage/>}></Route>
+        {/* <Route path="*" element={<h1>Page Not Found</h1>} /> */}
+        
         </Routes>
     </div>
   )

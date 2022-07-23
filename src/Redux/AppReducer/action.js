@@ -8,9 +8,9 @@ export const getProducts=(params)=>(dispatch)=>{
     .catch((err)=>dispatch({type:GET_PRODUCTS_FAILURE}))
 }
 
-export const getAtypeproduct=({type,limit})=>(dispatch)=>{
+export const getAtypeproduct=({type})=>(dispatch)=>{
     dispatch({type:GET_ATYPE_PRODUCTS_REQUEST});
-    axios.get(`https://olx-server-alll.herokuapp.com/${type}?_limit=${limit}`)
+    axios.get(`https://olx-server-alll.herokuapp.com/${type}`)
     .then((r)=>dispatch({type:GET_ATYPE_PRODUCTS_SUCCESS,payload:r.data}))
     .catch((err)=>dispatch({type:GET_ATYPE_PRODUCTS_FAILURE}))
 }
