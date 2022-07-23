@@ -86,7 +86,7 @@
     margin-left: 40px;
 }
 .nav2a{
-    font-size:22px;
+    font-size:18px;
 }
 .nav2b{
     display:flex;
@@ -122,4 +122,8 @@ a{
 }
 a:hover {
     color: rgb(35,229,219);
+  }
+  select>option{
+    outline: none;
+    text-decoration: none;
   }
