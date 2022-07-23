@@ -50,7 +50,7 @@ const Navbar = () => {
             <div className={Styles.nav2a}>
             <div className={Styles.nav2a1}><h6>ALL CATEGORIES</h6></div>
             <div className={Styles.a}>
-            <Link to ="/dropdown"><img width='40px' height='30px' src={arrow } /></Link>
+            <img width='40px' height='30px' src={arrow }onClick={()=>navigate("/dropdown")}/>
             <Link to ="/">.</Link>
 
             
