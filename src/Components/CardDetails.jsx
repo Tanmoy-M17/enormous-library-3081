@@ -27,7 +27,7 @@ const CardDetails=({content:{
   const{type}=useParams()
   useEffect(()=>{
     const getData=async()=>{
-      let r= await axios.get(`http://localhost:8080/${type}?_page=${page}&_limit=4`);
+      let r= await axios.get(`https://olx-server-alll.herokuapp.com/${type}?_page=${page}&_limit=4`);
          setData(r.data);
           setTotal(Number(r.headers["x-total-count"]))
       }
