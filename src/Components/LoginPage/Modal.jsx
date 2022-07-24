@@ -8,14 +8,28 @@ export const Modal = ({ show, handleClose }) => {
   const [mainSection, setMainSection] = useState(true);
   const [otpSection, setOtpSection] = useState(false);
   const [phone, setPhone] = useState("");
-  const [email,setEmail]=useState("");
+  const [email, setEmail] = useState("");
+  const [otpLength,setOtpLength]=useState(false);
+  const [page, setPage] = useState(0);
+  const [name,setName]=useState("");
   const pointer = useRef(null);
-  const [page,setPage]=useState(0);
-  const slides=[
-    {url:'./loginEntryPointChat.webp',text:"Close deals from the comfort of your home",id:1},
-    {url:'./loginEntryPointPost.webp',text:"Help us become one of the safest places to buy and sell",id:2},
-    {url:'./loginEntryPointFavorite.webp',text:"Keep all your favorites in one place",id:3}
-  ]
+  const slides = [
+    {
+      url: "./loginEntryPointChat.webp",
+      text: "Close deals from the comfort of your home",
+      id: 1,
+    },
+    {
+      url: "./loginEntryPointPost.webp",
+      text: "Help us become one of the safest places to buy and sell",
+      id: 2,
+    },
+    {
+      url: "./loginEntryPointFavorite.webp",
+      text: "Keep all your favorites in one place",
+      id: 3,
+    },
+  ];
 
   const showEmailSection = () => {
     pointer.current = "email";
@@ -23,19 +37,22 @@ export const Modal = ({ show, handleClose }) => {
     setMainSection(false);
     setOtpSection(false);
     setPhoneSection(false);
+    setOtpLength(false);
   };
   const showOtpSection = () => {
     setOtpSection(true);
     setEmailSection(false);
     setMainSection(false);
     setPhoneSection(false);
-    alert('Your OTP is 2579.');
+    setOtpLength(false);
+    alert("Your OTP is 2579.");
   };
   const gotoMain = () => {
     setMainSection(true);
     setEmailSection(false);
     setPhoneSection(false);
     setOtpSection(false);
+    setOtpLength(false);
   };
   const handlePhone = () => {
     pointer.current = "phone";
@@ -43,6 +60,7 @@ export const Modal = ({ show, handleClose }) => {
     setMainSection(false);
     setEmailSection(false);
     setOtpSection(false);
+    setOtpLength(false);
   };
   const gotoEmail = () => {
     if (pointer.current === "phone") {
@@ -50,29 +68,30 @@ export const Modal = ({ show, handleClose }) => {
       setPhoneSection(true);
       setMainSection(false);
       setOtpSection(false);
+      setOtpLength(false);
     } else {
       setEmailSection(true);
       setPhoneSection(false);
       setMainSection(false);
       setOtpSection(false);
+      setOtpLength(false);
     }
   };
-  const handleDec=(value)=>{
-    value=(page-value)%3;
+  const handleDec = (value) => {
+    value = (page - value) % 3;
     setPage(value);
-  }
-  const handleInc=(value)=>{
-    value=(page+value)%3;
+  };
+  const handleInc = (value) => {
+    value = (page + value) % 3;
     setPage(value);
-  }
+  };
 
   if (!show) {
     return null;
   }
+  console.log(otpLength);
   return (
     <>
-    
-
       {mainSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -86,28 +105,32 @@ export const Modal = ({ show, handleClose }) => {
             <div className={styles.modal_body}>
               <div>
                 <div className={styles.slider_div}>
-                <div className={styles.slider_image_div}>
-                <button
-                  style={{ border: "none", background: "white" }}
-                >
-                  <img onClick={()=>handleDec(-1)}
-                    className={styles.arrow_image}
-                    src="https://www.seekpng.com/png/detail/198-1980787_left-arrow-sign-arrow-back-icon-png.png"
-                    alt="name"
-                  />
-                </button>
-                <img className={styles.slider_image} src={`${slides[page].url}`} alt='name'/>
-                <button
-                  style={{ border: "none", background: "white" }}
-                >
-                  <img onClick={()=>handleInc(1)}
-                    className={styles.arrow_image_rotate}
-                    src="https://www.seekpng.com/png/detail/198-1980787_left-arrow-sign-arrow-back-icon-png.png"
-                    alt="name"
-                  />
-                </button>
-                </div>
-                <div className={styles.slider_text_div}><p>{`${slides[page].text}`}</p></div>
+                  <div className={styles.slider_image_div}>
+                    <button style={{ border: "none", background: "white" }}>
+                      <img
+                        onClick={() => handleDec(-1)}
+                        className={styles.arrow_image}
+                        src="https://www.seekpng.com/png/detail/198-1980787_left-arrow-sign-arrow-back-icon-png.png"
+                        alt="name"
+                      />
+                    </button>
+                    <img
+                      className={styles.slider_image}
+                      src={`${slides[page].url}`}
+                      alt="name"
+                    />
+                    <button style={{ border: "none", background: "white" }}>
+                      <img
+                        onClick={() => handleInc(1)}
+                        className={styles.arrow_image_rotate}
+                        src="https://www.seekpng.com/png/detail/198-1980787_left-arrow-sign-arrow-back-icon-png.png"
+                        alt="name"
+                      />
+                    </button>
+                  </div>
+                  <div className={styles.slider_text_div}>
+                    <p>{`${slides[page].text}`}</p>
+                  </div>
                 </div>
                 <div className={styles.button_div}>
                   <div style={{ height: "40px", border: "0px" }}>
@@ -165,10 +188,6 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
-
-
-      
-
       {emailSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -202,7 +221,13 @@ export const Modal = ({ show, handleClose }) => {
                   <h3>Enter your Email to Login</h3>
                 </div>
                 <div className={styles.email_input_div}>
-                  <input className={styles.email_input} value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email" />
+                  <input
+                  style={{width:"250px"}}
+                    className={styles.email_input}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                  />
                 </div>
                 <div
                   style={{
@@ -219,7 +244,8 @@ export const Modal = ({ show, handleClose }) => {
                   </p>
                 </div>
                 <div className={styles.email_button_div}>
-                  <button disabled={email.length <=0}
+                  <button
+                    disabled={email.length <= 0}
                     className={styles.email_next}
                     onClick={showOtpSection}
                   >
@@ -246,9 +272,6 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
-      
-
-      
       {phoneSection && (
         <div className={styles.modal}>
           <div className={styles.modal_content}>
@@ -282,7 +305,7 @@ export const Modal = ({ show, handleClose }) => {
                   <h3>Enter your phone number</h3>
                 </div>
                 <div className={styles.email_input_div}>
-                  <input
+                  <input style={{width:"250px"}}
                     className={styles.email_input}
                     placeholder="Phone"
                     value={phone}
@@ -318,11 +341,8 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
-
-
-      
-      
       {otpSection && (
+        
         <div className={styles.modal}>
           <div className={styles.modal_content}>
             <div className={styles.modal_header}>
@@ -355,10 +375,12 @@ export const Modal = ({ show, handleClose }) => {
             <div>
               <p className={styles.confirmation}>
                 We sent a 4 digit code to{" "}
-                <span className={styles.number}>{pointer.current === 'phone' ? `${phone}`: `${email}`}</span>
+                <span className={styles.number}>
+                  {pointer.current === "phone" ? `${phone}` : `${email}`}
+                </span>
               </p>
             </div>
-            <OTPpage />
+            <OTPpage setOtpLength={setOtpLength} />
             <div>
               <div className={styles.otp_again}>
                 <a style={{ textDecoration: "none" }} href="#abc">
@@ -374,6 +396,37 @@ export const Modal = ({ show, handleClose }) => {
           </div>
         </div>
       )}
+
+      {otpLength && (
+        <div className={styles.modal}>
+          <div className={styles.modal_content}>
+            <div className={styles.modal_header}>
+              <div style={{ display: "flex" }}>
+                <button
+                  style={{ border: "none", background: "white" }}
+                  onClick={showOtpSection}
+                >
+                  <img
+                    className={styles.arrow_image1}
+                    src="https://www.seekpng.com/png/detail/198-1980787_left-arrow-sign-arrow-back-icon-png.png"
+                    alt="name"
+                  />
+                </button>
+                <button className={styles.button1} onClick={handleClose}>
+                  X
+                </button>
+              </div>
+              <div style={{justifyContent:"center"}}>
+              <div><h2 className={styles.name}>What's your name?</h2></div>
+              <div><p className={styles.stranger}>'Stranger',feel so impersonal,you know?</p></div>
+              <div className={styles.input_name}><input value={name} onChange={(e)=>{setName(e.target.value);localStorage.setItem("name",JSON.stringify(name));}} style={{width:"250px",height:"32px",paddingLeft:"5px",paddingRight:"45px"}} placeholder="Enter your name" type="text"/></div>
+              <div className={styles.continue_btn_div}><button onClick={handleClose} className={styles.continue_btn}>Continue</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
     </>
   );
 };

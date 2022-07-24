@@ -30,7 +30,7 @@
 .modal_footer {
   padding: 10px;
 }
-.
+.button {
   border: none;
   margin-left: 300px;
   background-color: white;
@@ -126,7 +126,7 @@
   text-align: center;
 }
 .email_input{
-  padding: 10px 120px 10px 10px;
+  padding: 10px 15px 10px 15px;
   margin-top: 10px;
   overflow: visible;
 }
@@ -191,4 +191,34 @@
   text-align: center;
   font-size: small;
   margin-top: -15px;
+}
+.name{
+  color:#002f34;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.stranger{
+  color:gray;
+  margin-left: 10px;
+  font-size: 11px;
+  font-weight:400;
+  margin-top: -10px;
+}
+.input_name{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.continue_btn_div{
+  margin-left: 10px;
+  margin-top: 200px;
+}
+.continue_btn{
+  width:300px;
+  height:35px;
+  color:#002f34;
+  font-weight:bold;
+  font-size:15px;
+}
+.continue_btn:hover{
+  border: 3px solid #002f34;
 }
