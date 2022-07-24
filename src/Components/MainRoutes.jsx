@@ -10,7 +10,7 @@ import SignIn from "./LoginPage/SignIn";
 export const MainRoutes=()=>{
     return<>
     <Routes>
-        <Route path='/' element={<Homepage/>}/>
+        {/*<Route path='/' element={<Homepage/>}/>*/}
         <Route path="/signin" element={<SignIn/>}/>
         <Route path='/sell' element={<Sellerpage/>}/>
         <Route path='/post' element={<Post/>}/>
