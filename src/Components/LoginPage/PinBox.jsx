@@ -1,10 +1,9 @@
 import React, { useRef, useState } from "react";
 import PinItem from "./PinItem";
 
-const PinBox = ({ length, perBox }) => {
+const PinBox = ({ length, perBox,otpLength}) => {
   const [value, setValue] = useState(new Array(length).fill(""));
   let inputRef = useRef([]);
-  const [successful,setSuccessful]=useState(false);
   const handleBackspace = (e, index) => {
     if (index > 0) {
       inputRef.current[index - 1].focus();
@@ -12,13 +11,12 @@ const PinBox = ({ length, perBox }) => {
     value[index] = e.target.value;
     if(value.join("").length === length ){
 
-        setSuccessful(false);
+        otpLength(true);
     }else{
-        setSuccessful(false);
+        otpLength(false);
     }
   };
   const handleFocus = (e, index) => {
-    console.log(successful,"bool");
     let val = e.target.value;
     value[index] = val;
     setValue(value);
@@ -26,9 +24,9 @@ const PinBox = ({ length, perBox }) => {
       inputRef.current[index + 1].focus();
     }
     if(value.join("").length === length ){
-        setSuccessful(false);
+        otpLength(true);
     }else{
-        setSuccessful(false);
+        otpLength(false);
     }
   };
   const handlePaste = (e) => {
@@ -42,7 +40,7 @@ const PinBox = ({ length, perBox }) => {
         value[index] = item;
         inputRef.current[index].focus();
       });
-      setSuccessful(false);
+      otpLength(false);
     } else {
       data.forEach((item, index) => {
         console.log("count", index);
@@ -52,7 +50,7 @@ const PinBox = ({ length, perBox }) => {
           inputRef.current[index + 1].focus();
         }
       });
-      setSuccessful(false);
+      otpLength(false);
     }
     console.log(inputRef.current);
   };
@@ -64,7 +62,7 @@ const PinBox = ({ length, perBox }) => {
       >
         {value.map((item, index) => {
           return (
-            <PinItem complete={successful}
+            <PinItem complete={""}
               handleFocus={(e) => handleFocus(e, index)}
               handleBackSpace={(e) => handleBackspace(e, index)}
               key={index}
