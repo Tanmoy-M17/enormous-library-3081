@@ -32,14 +32,12 @@
 }
 .button {
 
-  border: none;
   margin-left: 300px;
   background-color: white;
   font-size: large;
   cursor: pointer;
 }
 .button1 {
-  border: none;
   margin-left: 270px;
   background-color: white;
   font-size: large;
