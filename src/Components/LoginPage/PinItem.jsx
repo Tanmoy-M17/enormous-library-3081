@@ -3,8 +3,9 @@ const style = {
   fontSize: 18,
   margin: 7,
   padding: 10,
-  width: 20,
+  width: 40,
   textAlign: "center",
+  border:"1px solid black"
 };
 const PinItem = forwardRef(({ max, handleBackSpace, handleFocus,complete }, ref) => {
   const handleInput = (e, index) => {
