@@ -138,7 +138,7 @@ export const Modal = ({ show, handleClose }) => {
                       Continue with Phone
                     </button>
                   </div>
-                  <div style={{ height: "40px", border: "0px" }}>
+                  <div style={{ height: "40px"}}>
                     <button className={styles.google}>
                       <a
                         style={{ textDecoration: "none", color: "#002f34" }}
