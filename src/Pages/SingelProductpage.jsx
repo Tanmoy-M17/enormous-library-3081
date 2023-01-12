@@ -15,8 +15,6 @@ export const SingleProductPage = () => {
     dispatch(getSingelProduct({ category:type, id }));
   }, [dispatch, type, id]);
 
-
-
   return (
     <div>
       <CardDetails content={content} />

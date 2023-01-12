@@ -21,7 +21,7 @@ const Productlist = () => {
 
   useEffect(()=>{
     const getData=async()=>{
-      let r= await axios.get(`https://olx-server-alll.herokuapp.com/cars?_page=${page}&_limit=4`);
+      let r= await axios.get(`https://red-violet-salmon-wrap.cyclic.app/cars?_page=${page}&_limit=4`);
          setData(r.data);
           setTotal(Number(r.headers["x-total-count"]))
       }

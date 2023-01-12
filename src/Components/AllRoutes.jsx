@@ -18,9 +18,7 @@ const AllRoutes = () => {
         <Route path={'/forsale'} element={<HouseSalePage/>}></Route>
         <Route path={'/scooters'} element={<ScootersPage/>}></Route>
         <Route path={'/commercial'} element={<CommericalVPage/>}></Route>
-        <Route path={'/forrent'} element={<HouseRentPage/>}></Route>
-        {/* <Route path="*" element={<h1>Page Not Found</h1>} /> */}
-        
+        <Route path={'/forrent'} element={<HouseRentPage/>}></Route>  
         </Routes>
     </div>
   )
