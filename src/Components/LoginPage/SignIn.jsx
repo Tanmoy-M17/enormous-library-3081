@@ -2,14 +2,11 @@ import { useState } from 'react';
 import {Modal} from './Modal';
 
 function SignIn() {
-  const [show,setShow]=useState(false);
-  const handleClose=()=>{
-    setShow(false);
-  }
+  const show=true;
+
   return (
     <div>
-      <button onClick={()=>setShow(true)}>Login</button>
-      <Modal show={show} handleClose={handleClose}/>
+      <Modal show={show} />
     </div>
   );
 }

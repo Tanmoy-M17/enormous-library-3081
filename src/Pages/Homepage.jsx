@@ -8,7 +8,7 @@ const navigate=useNavigate()
   return (
     <div>
       <div className='head'> 
-        <Button className='bt' onClick={()=>navigate("/sell")}>Sell Car</Button>
+        <button className='bt' onClick={()=>navigate("/sell")}>Sell Car</button>
       </div>
       <div className='ho'>
       <div className='listview'>

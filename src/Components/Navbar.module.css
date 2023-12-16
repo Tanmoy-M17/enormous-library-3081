@@ -109,12 +109,22 @@
     text-decoration: none;
 }
 .dd{
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow:  rgba(0, 0, 0, 0.24) 0px 1px 2px;
     width:80%;
-    /* height:700px; */
     margin:auto;
     display:flex;
     justify-content: space-between;
+    display: none;
+   
+}
+.dds{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
 }
 a{
     color:black;
@@ -129,3 +139,7 @@ a:hover {
     outline: none;
     text-decoration: none;
   }
+.arrowicon{
+    position: relative;
+    top: 10px;
+}

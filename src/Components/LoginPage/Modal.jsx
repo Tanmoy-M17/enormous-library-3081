@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import styles from "./Modal.module.css";
 import { OTPpage } from "./OTPpage";
+import { useNavigate } from "react-router-dom";
 
 export const Modal = ({ show, handleClose }) => {
+  const navigate=useNavigate()
   const [emailSection, setEmailSection] = useState(false);
   const [phoneSection, setPhoneSection] = useState(false);
   const [mainSection, setMainSection] = useState(true);
@@ -89,6 +91,8 @@ export const Modal = ({ show, handleClose }) => {
   if (!show) {
     return null;
   }
+ 
+ 
   console.log(otpLength);
   return (
     <>
@@ -97,7 +101,7 @@ export const Modal = ({ show, handleClose }) => {
           <div className={styles.modal_content}>
             <div className={styles.modal_header}>
               <div style={{ display: "flex" }}>
-                <button className={styles.button} onClick={handleClose}>
+                <button className={styles.button} onClick={()=>navigate("/")}>
                   X
                 </button>
               </div>
@@ -203,7 +207,7 @@ export const Modal = ({ show, handleClose }) => {
                     alt="name"
                   />
                 </button>
-                <button className={styles.button1} onClick={handleClose}>
+                <button className={styles.button1} onClick={()=>navigate("/")}>
                   X
                 </button>
               </div>
@@ -287,7 +291,7 @@ export const Modal = ({ show, handleClose }) => {
                     alt="name"
                   />
                 </button>
-                <button className={styles.button1} onClick={handleClose}>
+                <button className={styles.button1} onClick={()=>navigate("/")}>
                   X
                 </button>
               </div>
@@ -357,7 +361,7 @@ export const Modal = ({ show, handleClose }) => {
                     alt="name"
                   />
                 </button>
-                <button className={styles.button1} onClick={handleClose}>
+                <button className={styles.button1} onClick={()=>navigate("/")}>
                   X
                 </button>
               </div>
@@ -412,7 +416,7 @@ export const Modal = ({ show, handleClose }) => {
                     alt="name"
                   />
                 </button>
-                <button className={styles.button1} onClick={handleClose}>
+                <button className={styles.button1} onClick={()=>navigate("/")}>
                   X
                 </button>
               </div>
@@ -420,7 +424,7 @@ export const Modal = ({ show, handleClose }) => {
               <div><h2 className={styles.name}>What's your name?</h2></div>
               <div><p className={styles.stranger}>'Stranger',feel so impersonal,you know?</p></div>
               <div className={styles.input_name}><input value={name} onChange={(e)=>{setName(e.target.value);localStorage.setItem("name",JSON.stringify(name));}} style={{width:"250px",height:"32px",paddingLeft:"5px",paddingRight:"45px"}} placeholder="Enter your name" type="text"/></div>
-              <div className={styles.continue_btn_div}><button onClick={handleClose} className={styles.continue_btn}>Continue</button></div>
+              <div className={styles.continue_btn_div}><button onClick={()=>navigate("/")} className={styles.continue_btn}>Continue</button></div>
               </div>
             </div>
           </div>
